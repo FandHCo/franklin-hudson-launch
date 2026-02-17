@@ -16,10 +16,14 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            /* Ensures centering on desktop and eliminates mobile scroll */
             height: 100vh;
+            height: 100dvh; 
             margin: 0;
             text-align: center;
             padding: 20px;
+            overflow: hidden;
+            box-sizing: border-box;
         }
         h1 {
             font-size: 3rem;
@@ -38,7 +42,6 @@
 </head>
 <body>
     <h1>Franklin & Hudson Co.</h1>
-    
     <p class="status">Website under development</p>
     <p class="status">Arriving Spring 2026</p>
 </body>
