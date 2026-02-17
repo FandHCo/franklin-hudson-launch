@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Franklin & Hudson</title>
+    <title>Franklin & Hudson Co.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Restored the Google Font Link -->
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
     <style>
-        /* Flexbox handles the perfect vertical and horizontal centering automatically */
         body {
-            background-color: #121212; 
-            color: #ffffff;
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #FFFFFF;
+            color: #333333;
+            font-family: 'Libre Caslon Text', serif;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -17,32 +20,39 @@
             height: 100vh;
             margin: 0;
             text-align: center;
+            padding: 20px;
         }
-
-        .brand-name {
-            font-size: 1.6rem;
-            font-weight: 400;
-            letter-spacing: 0.45em;
+        h1 {
+            font-size: 3rem;
+            font-weight: 700; 
+            letter-spacing: -0.01em;
+            margin-bottom: 1.5rem;
+        }
+        .status {
+            font-style: italic;
+            font-size: 1.1rem;
+            opacity: 0.8;
+            letter-spacing: 0.02em;
+            margin: 4px 0; /* Keeps your stacked mobile layout tight */
+        }
+        /* Footer class is kept in CSS but the div is removed from the body */
+        .footer {
+            position: absolute;
+            bottom: 2.5rem;
+            font-size: 0.75rem;
             text-transform: uppercase;
-            margin-bottom: 25px; /* Spacing below the main logo */
-        }
-
-        .info-line {
-            font-size: 0.7rem;
             letter-spacing: 0.2em;
-            text-transform: uppercase;
-            color: #888888;
-            margin: 5px 0; /* Original 5px spacing for your mobile view */
-            padding: 0 20px; /* Essential for mobile margins */
+            opacity: 0.5;
         }
     </style>
 </head>
 <body>
-
-    <div class="brand-name">Franklin & Hudson</div>
+    <h1>Franklin & Hudson Co.</h1>
     
-    <div class="info-line">Website Under Development</div>
-    <div class="info-line">Arriving Spring 2026</div>
-
+    <!-- Periods removed as discussed -->
+    <p class="status">Website under development</p>
+    <p class="status">Arriving Spring 2026</p>
+    
+    <!-- New York line removed for brand transparency -->
 </body>
 </html>
